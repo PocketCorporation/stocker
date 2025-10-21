@@ -2,6 +2,7 @@
 import { NAV_ITEMS } from '@/lib/constants'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import UserDropdown from './UserDropdown'
 
 const NavItems = () => {
   const pathname=usePathname()
@@ -19,7 +20,7 @@ const NavItems = () => {
             {label} 
           </Link>
         </li>
-        // UserDropDown
+        // <UserDropdown /> 
       ))}
     </ul>
   )
